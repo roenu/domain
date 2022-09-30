@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- BBC Code by roenu | Ronald Herren | v1.0 -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!-- Website Title -->
+        <title>MyBbcSite</title>
+        <!-- Link CSS File -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Set Viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+<body>
+    <!-- Hidden Checkbox for Mobile Nav Button -->
+    <input type="checkbox" class="hide" id="overlay-input" />
+    <!-- Mobile Only: Hamburger Menu -->
+    <label for="overlay-input" class="hide" id="overlay-button"><span></span></label>
+    <!-- Mobile Only: Logo -->
+    <nav class="navm">
+        <a href="index.html" class="logom">MyBbcSite</a>
+    </nav>
+    <!-- Navigation Mobile & Desktop -->
+    <header id="overlay" class="navigation">
+      <label for="overlay-input" style="cursor:pointer;">
+        <!-- Desktop Only: Logo -->
+        <a href="index.html" class="logod">MyBbcSite</a>
+        <ul>
+            <li><a onclick="toggleCheckbox('overlay-input');" href="index.html">Home</a></li>
+            <li><a onclick="toggleCheckbox('overlay-input');" href="index.html#Products">Products</a></li>
+            <li><a onclick="toggleCheckbox('overlay-input');" href="index.html#About">About</a></li>
+            <li><a onclick="toggleCheckbox('overlay-input');" href="index.html#Contact">Contact</a></li>
+        </ul>
+      </label>
+    </header>
+    <div class="container">
+      <section id="Contact">
+        <div class="content">
+          <h1>Impressum.</h1>
+          <p>Betreiber:<br>
+             Ronald Herren<br>
+             Bahnhöheweg 70<br>
+             3018 Bern
+             ronald.herren@bbcag.ch</p>
+          <h1>Quellen.</h1>
+          <p>Fotos und Video:<br>
+            Unsplash <a href="https://images.unsplash.com/photo-1560732488-6b0df240254a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80">1</a><br>
+            Unsplash <a href="https://coolbackgrounds.io/images/unsplash/samuel-zeller-medium-b832fe04.jpg">2</a><br>
+            w3schools <a href="https://www.w3schools.com/howto/rain.mp4">Demovideo</a></p>
+        </div>
+      </section>
+      <footer>
+        Made by <a href="https://www.github.com/roenu">@roenu</a> | <a href="impressum.html">Impressum</a>
+      </footer>
+    </div>
+    <script>function toggleCheckbox(id) { document.getElementById(id).checked = !document.getElementById(id).checked; }</script>
+</body>
+</html>

@@ -1,1 +1,107 @@
-Test html
+<!DOCTYPE html>
+<!-- BBC Code by roenu | Ronald Herren | v1.0 -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!-- Website Title -->
+        <title>MyBbcSite</title>
+        <!-- Link CSS File -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Set Viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+<body>
+    <!-- Hidden Checkbox for Mobile Nav Button -->
+    <input type="checkbox" class="hide" id="overlay-input" />
+    <!-- Mobile Only: Hamburger Menu -->
+    <label for="overlay-input" class="hide" id="overlay-button"><span></span></label>
+    <!-- Mobile Only: Logo -->
+    <nav class="navm">
+        <a href="index.html" class="logom">MyBbcSite</a>
+    </nav>
+    <!-- Navigation Mobile & Desktop -->
+    <header id="overlay" class="navigation">
+      <label for="overlay-input">
+        <!-- Desktop Only: Logo -->
+        <a href="index.html" class="logod">MyBbcSite</a>
+        <ul>
+            <li><a onclick="toggleCheckbox('overlay-input');" href="index.html">Home</a></li>
+            <li><a onclick="toggleCheckbox('overlay-input');" href="index.html#Products">Products</a></li>
+            <li><a onclick="toggleCheckbox('overlay-input');" href="index.html#About">About</a></li>
+            <li><a onclick="toggleCheckbox('overlay-input');" href="index.html#Contact">Contact</a></li>
+        </ul>
+      </label>
+    </header>
+    <div class="container">
+    <section id="" class="intro gradient">
+      <div class="content">
+        <h1>My Awesome Bbc Site.</h1>
+        <p>Try. Fail. Try again. Fail better.</p>
+     </div>
+    </section>
+    <section id="Products" class="">
+      <div class="content">
+        <h1>Products.</h1>
+        <div class="row">
+  <div class="column" style="background-color:#1D4B61;">
+    <h2>Product 1</h2>
+    <div class="image-placeholder"><h4>image 1</h4></div>
+    <p>Das hie isch mis 1. Produkt</p>
+  </div>
+  <div class="column" style="background-color:#0099E0;">
+    <h2>Product 2</h2>
+    <div class="image-placeholder"><h4>image 2</h4></div>
+    <p>Das hie isch mis 2. Produkt</p>
+  </div>
+  <div class="column" style="background-color:#45B3E6;">
+    <h2>Product 3</h2>
+    <div class="image-placeholder"><h4>image 3</h4></div>
+    <p>Das hie isch mis 3. Produkt</p>
+  </div>
+  <div class="column" style="background-color:#0076AD;">
+    <h2>Product 4</h2>
+    <div class="image-placeholder"><h4>image 4</h4></div>
+    <p>Das hie isch mis 4. Produkt</p>
+  </div>
+</div>
+     </div>
+    </section>
+    <section id="About" class="blue">
+      <div class="content">
+        <h1>Something about me.</h1>
+        <p>Bla. bla. bla. bla.</p>
+        <video autoplay muted loop id="myVideo">
+  <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+     </div>
+    </section>
+    <section id="Parralax" class="parallax">
+      <div class="content">
+        <h1>Fancy Parralax.</h1>
+        <p>Or so.</p>
+     </div>
+    </section>
+    <section id="Contact">
+      <div class="content">
+        <h1>Feel free.</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/-oy8L_LGT4o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <form>
+  <input placeholder="Name" type="text"  value="" required>
+  <input placeholder="Email" type="text" value="" required>
+  <textarea placeholder="Message" rows="3" required></textarea>
+  <button>Send</button>
+</form>
+     </div>
+    </section>
+    <footer>
+      Made by <a href="https://www.github.com/roenu">@roenu</a>
+    </footer>
+</div>
+</body>
+<script>
+function toggleCheckbox(id) {
+    document.getElementById(id).checked = !document.getElementById(id).checked;
+}
+</script>
+</html>
